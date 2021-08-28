@@ -14,13 +14,13 @@ spec:
             arguments:
               parameters:
               - name: workflowtemplate
-                value: "workflow-template-submittable"
+                value: "workflow-template-submittable.yaml"
         - - name: workflow2
             template: triggerWorkflowUsingResourceWithArgument
             arguments:
               parameters:
               - name: workflowtemplate
-                value: "workflow-template-submittable"
+                value: "workflow-template-submittable.yaml"
               - name: message
                 value: "Welcome Argo"
 
