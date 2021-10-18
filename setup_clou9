@@ -27,6 +27,7 @@ sudo yum -y install jq gettext bash-completion moreutils
 Create Namespace and set SEC for that namespace
 kubectl create namespace <name>
 kubectl create rolebinding <any name> --clusterrole=admin --serviceaccount=<namespace-name>:default
+kubectl create clusterrolebinding <any name> --clusterrole=admin --serviceaccount=<namespace-name>:default
 kubectl config set-context --current --namespace=<your namespace>
 
 aws sts get-caller-identity
