@@ -38,4 +38,4 @@ user: jwkidd3
 password: <in chat>
 
 kubectl create secret generic regcred --from-file=.dockerconfigjson=/home/ec2-user/.docker/config.json> --type=kubernetes.io/dockerconfigjson
-kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "regcred"}]}
+kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "regcred"}]}'
